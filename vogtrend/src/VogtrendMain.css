@@ -25,3 +25,9 @@ body {
 .content {
   background-color: blue;
 }
+
+@media (max-width: 480px) {
+  .content {
+    margin-top: 180px;
+  }
+}

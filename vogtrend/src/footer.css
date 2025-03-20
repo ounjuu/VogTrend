@@ -66,3 +66,72 @@ h4 {
   padding-bottom: 30px;
   font-weight: bold;
 }
+/* 반응형 */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px 10px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+  }
+
+  .footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 0;
+  }
+
+  .footer-section li {
+    padding: 5px 0;
+  }
+
+  .footerTitle h4 img {
+    width: 250px;
+  }
+
+  .copyWriteText {
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 15px 5px;
+  }
+
+  h4 {
+    font-size: 11px;
+  }
+
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  .footer-section h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .footer-section ul {
+    font-size: 10px;
+  }
+
+  .footerTitle h4 img {
+    width: 200px;
+  }
+
+  .copyWriteText {
+    font-size: 10px;
+  }
+}
