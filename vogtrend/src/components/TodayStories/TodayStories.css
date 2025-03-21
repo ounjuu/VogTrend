@@ -20,4 +20,71 @@
 .cardBox {
   display: flex;
   justify-content: space-between;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+/* 반응형 스타일 */
+
+@media (max-width: 1200px) {
+  .MidCardTextBox {
+    padding: 20px 20px 35px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardBox {
+    flex-direction: column;
+  }
+  .cardBox {
+    .TodayStoriesRight {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+    .TodayStoriesLeft {
+      width: 100%;
+      padding-bottom: 15px;
+    }
+    .SmallCardTextBox {
+      width: 50%;
+      padding-top: 0px;
+    }
+
+    .TodayStories {
+      padding: 50px 20px 10px 20px;
+    }
+
+    .SmallCard {
+      display: flex;
+      width: 100%;
+    }
+    .SmallCardBox {
+      width: 50% !important;
+    }
+    .SmallCardTextBox {
+      padding-left: 15px;
+    }
+    .SmallCardTextBottom h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    align-items: center;
+
+    .TodayStories {
+      padding: 30px 15px 10px 15px;
+    }
+
+    .TodayStoriesRight {
+      grid-template-columns: 1fr;
+    }
+
+    .SmallCardTextBottom h2 {
+      font-size: 12px;
+    }
+  }
 }

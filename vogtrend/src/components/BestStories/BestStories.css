@@ -1,23 +1,20 @@
-.TodayStoriesContainer {
-  background-color: white;
+.BestStoriesContainer {
+  position: relative;
 }
-.TodayStories {
+.BestStories {
   padding: 90px 45px 20px 45px;
   box-sizing: border-box;
 }
 
-.TodayStoriesLeft {
-  width: 38%;
-}
-
-.TodayStoriesRight {
-  width: 59%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.cardBox {
-  display: flex;
-  justify-content: space-between;
+.BestStoriesContainer::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  margin-top: 280px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(209, 209, 209, 0.3);
+  z-index: -1;
 }

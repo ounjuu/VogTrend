@@ -4,6 +4,9 @@ h2 {
   font-size: inherit;
   font-weight: inherit;
 }
+.SmallCardContainer {
+  width: 100%;
+}
 .SmallCard {
   cursor: pointer;
 }
@@ -19,6 +22,10 @@ h2 {
 .SmallCardBox img {
   width: 100%;
   object-fit: contain;
+}
+
+.SmallCardBox.small img {
+  width: 280px; /* swiperClass가 true일 때 300px 크기 */
 }
 
 .SmallCardTextBottom h2 {

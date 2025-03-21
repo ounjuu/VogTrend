@@ -1,40 +1,84 @@
 import React, { useState, useEffect } from "react";
 import "./BestStories.css";
 import TitleText from "../TitleText/TitleText";
-import SmallCard from "../SmallCard/SmallCard";
+import SwiperComponent from "../SwiperComponent/SwiperComponent";
+import "swiper/css";
 
-const BestStories = (props) => {
-  // 작은 카드 데이터
-  const initialSmallCardData = [
-    {
-      fashionTitle: "Lifestyle",
-      subTitle: "메종 페리에 주에가 선보이는 예술에 대한 찬사",
-      date: "2025.03.14",
-      author: "이재은",
-      img: null,
-    },
-    {
-      fashionTitle: "Fashion",
-      subTitle: "자라와 앤더슨벨이 그리는 초심",
-      date: "2025.03.21",
-      author: "이재은",
-      img: null,
-    },
-    {
-      fashionTitle: "패션 트렌드",
-      subTitle: "올봄 안 입고는 못 배길 청바지, 스키니 부츠컷!",
-      date: "2025.03.20",
-      author: "이소미",
-      img: null,
-    },
-    {
-      fashionTitle: "패션 아이템",
-      subTitle: "미니멀 스타일이 지겹던 참이라면, '이 로고'에 주목해보세요",
-      date: "2025.03.20",
-      author: "안건호",
-      img: null,
-    },
-  ];
+// Best Stories 작은 카드 데이터
+const initialSmallCardData = [
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "일자바지 입을 땐 ‘이 슈즈’를 신으세요!",
+    date: "2025.03.19",
+    author: "황혜원, Lucrezia Malavolta",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 아이템",
+    subTitle: "방금 LA에서 돌아왔는데 모두가 ‘이 운동화’를 신고 있었습니다",
+    date: "2025.03.20",
+    author: "이소미, Daisy Jones",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 아이템",
+    subTitle: "2025년에도 꺼지지 않는 ‘이 운동화’ 열풍",
+    date: "2025.03.19",
+    author: "황혜원, Cortne Bonilla",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "올봄 ‘이 옷’만큼은 전형적으로 입어야 합니다",
+    date: "2025.03.19",
+    author: "이소미",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "런웨이에서 입을 모아 제안한 탱크 톱과 ‘이 팬츠’",
+    date: "2025.03.19",
+    author: "이소미",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "일자바지 입을 땐 ‘이 슈즈’를 신으세요!",
+    date: "2025.03.19",
+    author: "황혜원, Lucrezia Malavolta",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 아이템",
+    subTitle: "방금 LA에서 돌아왔는데 모두가 ‘이 운동화’를 신고 있었습니다",
+    date: "2025.03.20",
+    author: "이소미, Daisy Jones",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 아이템",
+    subTitle: "2025년에도 꺼지지 않는 ‘이 운동화’ 열풍",
+    date: "2025.03.19",
+    author: "황혜원, Cortne Bonilla",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "올봄 ‘이 옷’만큼은 전형적으로 입어야 합니다",
+    date: "2025.03.19",
+    author: "이소미",
+    img: "",
+  },
+  {
+    fashionTitle: "패션 트렌드",
+    subTitle: "런웨이에서 입을 모아 제안한 탱크 톱과 ‘이 팬츠’",
+    date: "2025.03.19",
+    author: "이소미",
+    img: "",
+  },
+];
+
+const BestStories = () => {
   const [smallCardData, setSmallCardData] = useState(initialSmallCardData);
 
   useEffect(() => {
@@ -62,17 +106,19 @@ const BestStories = (props) => {
     setSmallCardData(updatedData);
   }, []);
 
+  // const slide1 = smallCardData.slice(0, 4);
+  // const slide2 = smallCardData.slice(4, 8);
+  // const slide3 = smallCardData.slice(8);
+
   return (
     <div className="BestStoriesContainer">
       <div className="BestStories">
         {/* 타이틀 */}
         <TitleText text="BEST STORIES" showMore={false} />
-        <div className="cardBox">
-          {/* 작은 사이즈 cards */}
-          <div className="BestStoriesRight">
-            {smallCardData.map((card, index) => (
-              <SmallCard key={index} smallCardData={card} />
-            ))}
+        <div className="BestStoriesCardBox">
+          {/* 스와이퍼 cards */}
+          <div className="BestStoriesSwiper">
+            <SwiperComponent smallCardData={smallCardData} />
           </div>
         </div>
       </div>
