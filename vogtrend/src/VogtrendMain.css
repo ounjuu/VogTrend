@@ -14,7 +14,7 @@ body {
 
 .content {
   flex: 1;
-  margin-top: 220px;
+  /* padding-top: 220px; */
   min-height: 500px;
 }
 
@@ -26,8 +26,8 @@ body {
   background-color: blue;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .content {
-    margin-top: 180px;
+    padding-top: 180px;
   }
-}
+} */
