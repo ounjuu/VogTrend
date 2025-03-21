@@ -3,14 +3,16 @@ import "./SmallCard.css";
 
 // 메인페이지 제목들
 const SmallCard = (props) => {
-  const { smallCardData, imageKey } = props;
-  const imageSrc = `/img/vog${imageKey + 1}.webp`;
+  const { smallCardData } = props;
 
   return (
     <div className="SmallCardContainer">
       <div className="SmallCard">
         <div className="SmallCardBox">
-          <img src={imageSrc} alt={`${smallCardData.fashionTitle} Img`} />
+          <img
+            src={smallCardData.img}
+            alt={`${smallCardData.fashionTitle} Img`}
+          />
         </div>
         <div className="SmallCardTextBox">
           <div className="SmallCardTextBottom">

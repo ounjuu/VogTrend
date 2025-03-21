@@ -1,0 +1,23 @@
+.TodayStoriesContainer {
+  background-color: white;
+}
+.TodayStories {
+  padding: 90px 45px 20px 45px;
+  box-sizing: border-box;
+}
+
+.TodayStoriesLeft {
+  width: 38%;
+}
+
+.TodayStoriesRight {
+  width: 59%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: space-between;
+}
