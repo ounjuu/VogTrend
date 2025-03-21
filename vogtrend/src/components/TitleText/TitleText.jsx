@@ -3,14 +3,14 @@ import "./TitleText.css";
 
 // 메인페이지 제목들
 const TitleText = (props) => {
-  const { text, showMore = false, onMoreClick } = props;
+  const { text, showMore, onMoreClick } = props;
   return (
     <div className="TitleTextContainer">
       <div className="TitleText">
         <h2>{text}</h2>
         {showMore && (
           <button onClick={onMoreClick} className="MoreButton">
-            more &gt;
+            MORE &gt;
           </button>
         )}
       </div>

@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import React from "react";
 import "./VogtrendMain.css";
-import Header from "./header";
-import Footer from "./footer";
-import MainTitleImg from "./MainTitleImg";
-import TodayStories from "./TodayStories";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import MainTitleImg from "./components/MainTitleImg/MainTitleImg";
+import TodayStories from "./components/TodayStories/TodayStories";
 
 function VogtrendMain() {
   return (

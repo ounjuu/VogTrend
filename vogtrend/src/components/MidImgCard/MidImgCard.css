@@ -1,0 +1,61 @@
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.MidImgCardContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.MidImgCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.MidImgCardBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.MidImgCardBox img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.MidCardTextBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 40px 85px 40px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.MidCardTextBottom h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.MidCardTextBottom p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+}
+.MidCardTextBottom span {
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(237, 237, 237);
+}
+.MidCardTextBottom .fontSize10 {
+  font-size: 10px;
+  margin: 0 5px;
+}
