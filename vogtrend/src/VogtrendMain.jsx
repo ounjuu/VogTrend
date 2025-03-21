@@ -8,6 +8,8 @@ import TodayStories from "./components/TodayStories/TodayStories";
 import BestStories from "./components/BestStories/BestStories";
 import MustRead from "./components/MustRead/MustRead";
 import PeopleNow from "./components/PeopleNow/PeopleNow";
+import Fashion from "./components/Fashion/Fashion";
+import Beauty from "./components/Beauty/Beauty";
 function VogtrendMain() {
   // alert 띄우기
   const handleMoreClick = () => {
@@ -34,6 +36,12 @@ function VogtrendMain() {
 
         {/* People Now - 메인 네번째 */}
         <PeopleNow />
+
+        {/* Fashion - 메인 네번째 */}
+        <Fashion />
+
+        {/* Beauty - 메인 네번째 */}
+        <Beauty />
       </div>
       <div className="my_footer">
         <Footer />

@@ -14,7 +14,7 @@ const SmallCard = (props) => {
           }`}
         >
           <img
-            src={smallCardData.img}
+            src={smallCardData.img || null}
             alt={`${smallCardData.fashionTitle} Img`}
           />
         </div>

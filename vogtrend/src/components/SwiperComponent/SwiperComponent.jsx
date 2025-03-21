@@ -8,7 +8,6 @@ import SmallCard from "../SmallCard/SmallCard";
 
 const SwiperComponent = (props) => {
   const { smallCardData } = props;
-  console.log(smallCardData, "smallcard");
   return (
     <div className="SwiperComponentContainer">
       <div className="SwiperComponent">
