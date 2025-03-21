@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import React from "react";
+import React, { useState } from "react";
 import "./VogtrendMain.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -7,6 +7,11 @@ import MainTitleImg from "./components/MainTitleImg/MainTitleImg";
 import TodayStories from "./components/TodayStories/TodayStories";
 
 function VogtrendMain() {
+  // alert 띄우기
+  const handleMoreClick = () => {
+    alert("준비중입니다.");
+  };
+
   return (
     <div className="wrapper">
       <div className="my_header">
