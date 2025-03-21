@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 
 function Header() {
@@ -6,8 +6,32 @@ function Header() {
   const toggleSelectBox = () => {
     setIsOpen(!isOpen);
   };
+
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollTop = 0;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        setIsVisible(false); // 스크롤 내릴 때 헤더 숨기기
+      } else {
+        setIsVisible(true); // 스크롤 올릴 때 헤더 보이기
+      }
+
+      lastScrollTop = scrollTop;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="header">
+    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="headercontent">
         <nav>
           <div className="headerTitle">

@@ -16,7 +16,7 @@ const initialSmallCardData = [
     fashionTitle: "PEOPLE NOW",
     subTitle: "지금, 보그가 주목하는 인물",
     date: "2025.03.18",
-    author: "N/A",
+    author: "김하나",
     img: "",
   },
   {
@@ -24,14 +24,14 @@ const initialSmallCardData = [
     subTitle:
       "정유미, “그렇게 일 잘하는 사람들을 곁에서 볼 수 있어 행운이었죠”",
     date: "2025.03.18",
-    author: "N/A",
+    author: "하서이",
     img: "",
   },
   {
     fashionTitle: "엔터테인먼트",
     subTitle: "GD, 권지용, 지드래곤 🙂",
     date: "2025.03.18",
-    author: "N/A",
+    author: "김미소",
     img: "",
   },
 ];
@@ -57,7 +57,7 @@ const MustRead = () => {
       const randomIndex = randomImageIndexes[index];
       return {
         ...card,
-        img: `/img/vog${randomIndex}.webp`,
+        img: `/img/vogmid${randomIndex}.webp`,
       };
     });
 
@@ -73,7 +73,7 @@ const MustRead = () => {
           {/* small cards */}
           <div className="MustReadSmallCard">
             {smallCardData.map((card, index) => (
-              <SmallCard key={index} smallCardData={card} />
+              <SmallCard key={index} smallCardData={card} isSquare={true} />
             ))}
           </div>
         </div>

@@ -1,0 +1,42 @@
+.PeopleNowContainer {
+  position: relative;
+  background-color: rgba(209, 209, 209, 0.3);
+}
+.PeopleNowContainer {
+  padding: 90px 45px 20px 45px;
+  box-sizing: border-box;
+}
+
+.PeopleNowSmallCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+.PeopleNowSmallCard span {
+  color: rgb(125, 125, 125);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.PeopleNowSmallCard .MidCardTextBox h2 {
+  font-size: 18px;
+  height: 100px;
+}
+.PeopleNowSmallCard .MidCardTextBox {
+  padding-bottom: 35px;
+}
+.PeopleNowSmallCard .MidCardTextBox span {
+  display: none;
+}
+@media (max-width: 768px) {
+  .PeopleNowSmallCard {
+    grid-template-columns: 1fr;
+  }
+  .PeopleNowSmallCard .MidCardTextBox h2 {
+    font-size: 25px;
+  }
+  .PeopleNowSmallCard .MidCardTextBox {
+    padding-bottom: 15px;
+  }
+}

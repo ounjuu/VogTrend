@@ -1,11 +1,26 @@
-header {
+.header {
   background-color: white;
   padding: 8px 80px 30px 80px;
   width: 100%;
   height: 220px;
   box-sizing: border-box;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
 }
+body {
+  padding-top: 220px;
+}
+.hidden {
+  top: -220px; /* 화면 밖으로 밀어냄 */
+}
+
+.visible {
+  top: 0;
+}
+
 .header-nav li {
   list-style: none;
   margin: 0;
@@ -132,7 +147,11 @@ a:visited {
     margin: auto;
   }
   header {
-    padding: 8px 80px 30px 0px;
+    padding: 0px 0px 40px 40px !important;
+    height: 200px !important;
+  }
+  body {
+    padding-top: 200px;
   }
   .headerTitle h4 {
     justify-content: left;
@@ -150,6 +169,13 @@ a:visited {
   }
 }
 @media (max-width: 768px) {
+  header {
+    padding: 0px 0px 40px 40px !important;
+    height: 180px !important;
+  }
+  body {
+    padding-top: 180px;
+  }
   .header-nav {
     padding-left: 10px;
   }
@@ -171,6 +197,7 @@ a:visited {
   header {
     padding: 8px 80px 30px 0px;
   }
+
   .headerTitle h4 {
     justify-content: left;
     padding-left: 18px;
@@ -198,6 +225,13 @@ a:visited {
   }
 }
 @media (max-width: 480px) {
+  header {
+    padding: 0px !important;
+    height: 180px !important;
+  }
+  body {
+    padding-top: 180px;
+  }
   .header-nav {
     padding-left: 10px;
   }

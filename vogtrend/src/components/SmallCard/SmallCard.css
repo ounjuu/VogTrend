@@ -24,6 +24,12 @@ h2 {
   object-fit: contain;
 }
 
+/* 1/1 비율일 때 */
+.SmallCardBox.square img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
 .SmallCardBox.small img {
   width: 280px; /* swiperClass가 true일 때 300px 크기 */
 }

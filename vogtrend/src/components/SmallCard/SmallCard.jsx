@@ -3,12 +3,16 @@ import "./SmallCard.css";
 
 // 메인페이지 제목들
 const SmallCard = (props) => {
-  const { smallCardData, swiperClass } = props;
+  const { isSquare, smallCardData, swiperClass } = props;
 
   return (
     <div className="SmallCardContainer">
       <div className="SmallCard">
-        <div className={`SmallCardBox ${swiperClass ? "small" : ""}`}>
+        <div
+          className={`SmallCardBox ${swiperClass ? "small" : ""} ${
+            isSquare ? "square" : ""
+          }`}
+        >
           <img
             src={smallCardData.img}
             alt={`${smallCardData.fashionTitle} Img`}

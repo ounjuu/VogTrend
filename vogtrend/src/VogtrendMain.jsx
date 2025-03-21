@@ -7,6 +7,7 @@ import MainTitleImg from "./components/MainTitleImg/MainTitleImg";
 import TodayStories from "./components/TodayStories/TodayStories";
 import BestStories from "./components/BestStories/BestStories";
 import MustRead from "./components/MustRead/MustRead";
+import PeopleNow from "./components/PeopleNow/PeopleNow";
 function VogtrendMain() {
   // alert 띄우기
   const handleMoreClick = () => {
@@ -30,6 +31,9 @@ function VogtrendMain() {
 
         {/* Must Read - 메인 세번째 */}
         <MustRead />
+
+        {/* People Now - 메인 네번째 */}
+        <PeopleNow />
       </div>
       <div className="my_footer">
         <Footer />
