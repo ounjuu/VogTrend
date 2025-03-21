@@ -18,3 +18,9 @@
   background-color: rgba(209, 209, 209, 0.3);
   z-index: -1;
 }
+
+.BestStoriesSwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
