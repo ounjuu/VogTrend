@@ -33,20 +33,29 @@
 
 /* 반응형 스타일 */
 
-@media (max-width: 1200px) {
-  .MidCardTextBox {
-    padding: 20px 20px 35px 20px !important;
+@media (max-width: 1023px) {
+  .LatestStoriesRight img {
+    width: 200px;
+    height: auto;
+  }
+  .LatestStoriesLeft {
+    .SmallCardTextBottom h2 {
+      font-size: 18px;
+    }
   }
 }
 
 @media (max-width: 768px) {
+  .LatestStoriesRight {
+    display: none;
+  }
   .LatestStoriesCardBox {
     flex-direction: column;
   }
   .LatestStoriesCardBox {
-    .LatestStoriesRight {
-      grid-template-columns: 1fr;
-      gap: 20px;
+    .LatestStoriesLeft {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
       width: 100%;
     }
     .LatestStoriesLeft {
@@ -54,9 +63,10 @@
       padding-bottom: 15px;
       order: -1;
     }
+
     .SmallCardTextBox {
-      width: 50%;
-      padding-top: 0px;
+      width: 100%;
+      padding-top: 25px;
     }
 
     .LatestStories {
@@ -64,14 +74,11 @@
     }
 
     .SmallCard {
-      display: flex;
+      display: block;
       width: 100%;
     }
     .SmallCardBox {
-      width: 50% !important;
-    }
-    .SmallCardTextBox {
-      padding-left: 15px;
+      width: 100% !important;
     }
     .SmallCardTextBottom h2 {
       font-size: 16px;
@@ -92,10 +99,6 @@
 
     .LatestStoriesRight {
       grid-template-columns: 1fr;
-    }
-
-    .SmallCardTextBottom h2 {
-      font-size: 12px;
     }
   }
 }
