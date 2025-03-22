@@ -3,41 +3,8 @@ import "./MustRead.css";
 import TitleText from "../TitleText/TitleText";
 import SmallCard from "../SmallCard/SmallCard";
 
-// Best Stories 작은 카드 데이터
-const initialSmallCardData = [
-  {
-    fashionTitle: "패션 트렌드",
-    subTitle: "이제 봄마다 당연하게 꺼내 입어야 할 색",
-    date: "2025.03.17",
-    author: "이소미",
-    img: "",
-  },
-  {
-    fashionTitle: "PEOPLE NOW",
-    subTitle: "지금, 보그가 주목하는 인물",
-    date: "2025.03.18",
-    author: "김하나",
-    img: "",
-  },
-  {
-    fashionTitle: "패션 화보",
-    subTitle:
-      "정유미, “그렇게 일 잘하는 사람들을 곁에서 볼 수 있어 행운이었죠”",
-    date: "2025.03.18",
-    author: "하서이",
-    img: "",
-  },
-  {
-    fashionTitle: "엔터테인먼트",
-    subTitle: "GD, 권지용, 지드래곤 🙂",
-    date: "2025.03.18",
-    author: "김미소",
-    img: "",
-  },
-];
-
-const MustRead = () => {
-  const [smallCardData, setSmallCardData] = useState(initialSmallCardData);
+const MustRead = (props) => {
+  const { Title, smallCardData, setSmallCardData, More } = props;
 
   useEffect(() => {
     // 1~10 사이의 숫자 배열 생성
@@ -68,7 +35,7 @@ const MustRead = () => {
     <div className="MustReadContainer">
       <div className="MustRead">
         {/* 타이틀 */}
-        <TitleText text="MUST READ" showMore={false} />
+        <TitleText text={Title} showMore={More} />
         <div className="MustReadCardBox">
           {/* small cards */}
           <div className="MustReadSmallCard">

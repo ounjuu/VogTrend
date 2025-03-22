@@ -106,10 +106,6 @@ const BestStories = () => {
     setSmallCardData(updatedData);
   }, []);
 
-  // const slide1 = smallCardData.slice(0, 4);
-  // const slide2 = smallCardData.slice(4, 8);
-  // const slide3 = smallCardData.slice(8);
-
   return (
     <div className="BestStoriesContainer">
       <div className="BestStories">

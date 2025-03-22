@@ -1,0 +1,101 @@
+.LatestStoriesContainer {
+  background-color: white;
+  display: flex;
+}
+.LatestStories {
+  padding: 90px 45px 20px 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.LatestStoriesLeft {
+  width: 68%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.LatestStoriesRight {
+  width: 28%;
+  text-align: right;
+}
+.LatestStoriesRight img {
+  position: sticky;
+  top: 0px;
+  cursor: pointer;
+}
+.LatestStoriesCardBox {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+/* 반응형 스타일 */
+
+@media (max-width: 1200px) {
+  .MidCardTextBox {
+    padding: 20px 20px 35px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .LatestStoriesCardBox {
+    flex-direction: column;
+  }
+  .LatestStoriesCardBox {
+    .LatestStoriesRight {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+    .LatestStoriesLeft {
+      width: 100%;
+      padding-bottom: 15px;
+      order: -1;
+    }
+    .SmallCardTextBox {
+      width: 50%;
+      padding-top: 0px;
+    }
+
+    .LatestStories {
+      padding: 50px 20px 10px 20px;
+    }
+
+    .SmallCard {
+      display: flex;
+      width: 100%;
+    }
+    .SmallCardBox {
+      width: 50% !important;
+    }
+    .SmallCardTextBox {
+      padding-left: 15px;
+    }
+    .SmallCardTextBottom h2 {
+      font-size: 16px;
+    }
+    .MidCardTextBottom h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .LatestStoriesCardBox {
+    align-items: center;
+
+    .LatestStories {
+      padding: 30px 15px 10px 15px;
+    }
+
+    .LatestStoriesRight {
+      grid-template-columns: 1fr;
+    }
+
+    .SmallCardTextBottom h2 {
+      font-size: 12px;
+    }
+  }
+}
