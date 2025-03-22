@@ -47,8 +47,8 @@ h4 {
 }
 .headerTitle h4 img {
   padding-top: 25px;
-  width: 300px;
-  height: auto;
+  width: 350px;
+  height: 130px;
 }
 
 .headercontent {
@@ -68,7 +68,7 @@ a:visited {
   color: inherit;
 }
 .header-nav {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   z-index: 5;
 }
 
@@ -213,9 +213,10 @@ a:visited {
     transition: transform 0.3s ease;
   }
   .headerTitle h4 img {
-    padding-top: 25px;
+    padding-top: 30px;
     width: 250px;
-    height: auto;
+    height: 80px;
+    padding-bottom: 25px;
   }
   .rightBox {
     right: 25px;

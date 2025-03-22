@@ -52,8 +52,8 @@ h4 {
 
 .footerTitle h4 img {
   padding-top: 25px;
-  width: 300px;
-  height: auto;
+  width: 350px;
+  height: 130px;
 }
 
 .footerTitle {
@@ -97,6 +97,7 @@ h4 {
 
   .footerTitle h4 img {
     width: 250px;
+    height: 80px;
   }
 
   .copyWriteText {

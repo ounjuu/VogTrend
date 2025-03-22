@@ -36,7 +36,7 @@ function Header() {
         <nav>
           <div className="headerTitle">
             <h4>
-              <img src="/img/vogTrend_hd.png" />
+              <img src="/img/vogTrend1.png" />
             </h4>
           </div>
           <ul className="header-nav">
