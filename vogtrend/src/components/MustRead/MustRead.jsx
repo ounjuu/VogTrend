@@ -4,7 +4,8 @@ import TitleText from "../TitleText/TitleText";
 import SmallCard from "../SmallCard/SmallCard";
 
 const MustRead = (props) => {
-  const { Title, smallCardData, setSmallCardData, More } = props;
+  const { Title, smallCardData, setSmallCardData, More, handleMoreClick } =
+    props;
 
   useEffect(() => {
     // 1~10 사이의 숫자 배열 생성
@@ -35,7 +36,11 @@ const MustRead = (props) => {
     <div className="MustReadContainer">
       <div className="MustRead">
         {/* 타이틀 */}
-        <TitleText text={Title} showMore={More} />
+        <TitleText
+          text={Title}
+          showMore={More}
+          handleMoreClick={handleMoreClick}
+        />
         <div className="MustReadCardBox">
           {/* small cards */}
           <div className="MustReadSmallCard">

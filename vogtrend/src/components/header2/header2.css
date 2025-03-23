@@ -1,0 +1,326 @@
+.header2 {
+  border-bottom: solid 1px rgb(194, 194, 194);
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  /* select box 만들기 */
+  .selectBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selectOptions {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    padding-right: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 2px;
+    padding: 10px 5px;
+    font-size: 13px;
+  }
+
+  /* 화살표 스타일 추가 */
+  .selectBox::after {
+    content: "▼";
+    position: absolute;
+    right: 175px;
+    top: 45px;
+    font-size: 13px;
+    pointer-events: none;
+    transform: translateY(55%) rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  .selectBox.open::after {
+    transform: translateY(65%) rotate(180deg);
+  }
+}
+.header2Left {
+  display: flex;
+  justify-content: space-between;
+  .header2-nav {
+    padding-left: 30px;
+  }
+}
+.hidden {
+  top: -220px; /* 화면 밖으로 밀어냄 */
+}
+
+.visible {
+  top: 0;
+}
+.header2Title {
+  cursor: pointer;
+}
+
+.header2-nav li {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+li {
+  outline: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header2Title h4 img {
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 320px;
+  height: 130px;
+}
+
+.header2Content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+.header2-nav {
+  z-index: 5;
+}
+
+.header2RightBox {
+  display: flex;
+  position: relative;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+.subBtn {
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 30px;
+}
+.hamburgerBtn {
+  font-size: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .header2 {
+    .selectBox::after {
+      right: 140px !important;
+    }
+  }
+  .header2-nav li {
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .header2Left {
+    .header2-nav {
+      padding-left: 5px;
+    }
+  }
+  .header2RightBox .subBtn {
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 8px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1024px) {
+  .header2-nav li {
+    padding: 0px 15px 0px 15px;
+    font-size: 15px;
+  }
+  .header2 {
+    .header-nav li {
+      font-size: 18px;
+    }
+  }
+  .header2Left {
+    display: block;
+  }
+  .subBtn {
+    display: none;
+  }
+  .headercontent {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+  }
+  header {
+    padding: 0px 0px 40px 40px !important;
+    height: 180px !important;
+  }
+  body {
+    padding-top: 200px;
+  }
+  .header2Title h4 {
+    justify-content: left;
+    padding-left: 18px;
+  }
+  .header2 {
+    padding: 0px 40px 40px 40px !important;
+    .selectBox::after {
+      right: 65px !important;
+      top: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0px 0px 40px 40px !important;
+    height: 180px !important;
+  }
+  body {
+    padding-top: 180px;
+  }
+  .header2-nav {
+    padding-left: 10px;
+  }
+  .header2-nav li {
+    padding: 0px 8px 0px 8px;
+    font-size: 15px;
+  }
+  .subBtn {
+    display: none;
+  }
+  .header2Content {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+  }
+  header {
+    padding: 8px 80px 30px 0px;
+  }
+
+  .header2Title h4 {
+    justify-content: left;
+    padding-left: 18px;
+  }
+
+  .header2Title h4 img {
+    width: 250px;
+    height: 100px;
+  }
+  .header2RightBox {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    z-index: 20;
+  }
+  .hamburgerBtn {
+    padding-left: 15px;
+  }
+  .header2 {
+    padding: 10px 35px 35px 35px !important;
+    .selectBox::after {
+      right: 45px !important;
+      top: 2px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  header.header2 {
+    padding: 0px !important;
+    height: 150px !important;
+  }
+  body {
+    padding-top: 180px;
+  }
+  .header2-nav {
+    margin-left: 10px;
+  }
+  .header2-nav li {
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .header2RightBox {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    z-index: 20;
+  }
+  .selectBox::after {
+    content: "▼";
+    position: absolute;
+    right: 45px;
+    top: 0px;
+    font-size: 13px;
+    pointer-events: none;
+    transform: translateY(55%) rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  .hamburgerBtn {
+    padding-left: 10px;
+  }
+  .header2Title h4 {
+    font-size: 14px;
+  }
+
+  .header2Title h4 img {
+    width: 200px;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .selectOptions {
+    font-size: 12px;
+  }
+  header {
+    height: 180px;
+  }
+  .header2 {
+    padding: 0px !important;
+  }
+}

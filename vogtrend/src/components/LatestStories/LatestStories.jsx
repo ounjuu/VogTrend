@@ -4,6 +4,7 @@ import TitleText from "../TitleText/TitleText";
 import SmallCard from "../SmallCard/SmallCard";
 
 const LatestStories = (props) => {
+  const { handleMoreClick } = props;
   // 작은 카드 데이터
   const fashionData = [
     {
@@ -125,7 +126,11 @@ const LatestStories = (props) => {
     <div className="LatestStoriesContainer">
       <div className="LatestStories">
         {/* 타이틀 */}
-        <TitleText text="LATEST STORIES" showMore={true} />
+        <TitleText
+          text="LATEST STORIES"
+          showMore={true}
+          handleMoreClick={handleMoreClick}
+        />
         <div className="LatestStoriesCardBox">
           {/* 작은 사이즈 cards */}
           <div className="LatestStoriesLeft">

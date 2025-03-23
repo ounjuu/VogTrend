@@ -6,14 +6,7 @@ body {
   padding: 0;
   max-width: 1280px;
 }
-body {
-  padding-top: 220px !important;
-}
-@media (max-width: 1024px) {
-  body {
-    padding-top: 180px !important;
-  }
-}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -22,7 +15,6 @@ body {
 
 .content {
   flex: 1;
-  /* padding-top: 220px; */
   min-height: 500px;
 }
 

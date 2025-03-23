@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./header.css";
+import "./header2.css";
 
-function Header(props) {
+function Header2(props) {
   const { setDetailPage } = props;
   const [isOpen, setIsOpen] = useState(false);
   const toggleSelectBox = () => {
@@ -17,9 +17,9 @@ function Header(props) {
         window.pageYOffset || document.documentElement.scrollTop;
 
       if (scrollTop > lastScrollTop) {
-        setIsVisible(false); // 스크롤 내릴 때 헤더 숨기기
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // 스크롤 올릴 때 헤더 보이기
+        setIsVisible(true);
       }
 
       lastScrollTop = scrollTop;
@@ -32,45 +32,47 @@ function Header(props) {
     };
   }, []);
   return (
-    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
-      <div className="headercontent">
+    <header className={`header2 ${isVisible ? "visible" : "hidden"}`}>
+      <div className="header2Content">
         <nav>
-          <div
-            className="headerTitle"
-            onClick={() => setDetailPage("MainPage")}
-          >
-            <h4>
-              <img src="/img/vogTrend1.png" />
-            </h4>
+          <div className="header2Left">
+            <div
+              className="header2Title"
+              onClick={() => setDetailPage("MainPage")}
+            >
+              <h4>
+                <img src="/img/vogTrend1.png" />
+              </h4>
+            </div>
+            <ul className="header2-nav">
+              <li>
+                <a href="#" onClick={() => setDetailPage("DetailPage")}>
+                  FASHION
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={() => setDetailPage("DetailPage")}>
+                  BEAUTY
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={() => setDetailPage("DetailPage")}>
+                  LIFESTYLE
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={() => setDetailPage("DetailPage")}>
+                  CULTURE
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={() => setDetailPage("DetailPage")}>
+                  VIDEO
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul className="header-nav">
-            <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
-                FASHION
-              </a>
-            </li>
-            <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
-                BEAUTY
-              </a>
-            </li>
-            <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
-                LIFESTYLE
-              </a>
-            </li>
-            <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
-                CULTURE
-              </a>
-            </li>
-            <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
-                VIDEO
-              </a>
-            </li>
-          </ul>
-          <div className="rightBox">
+          <div className="header2RightBox">
             <div className={`selectBox ${isOpen ? "open" : ""}`}>
               <select
                 className="selectOptions"
@@ -95,4 +97,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default Header2;

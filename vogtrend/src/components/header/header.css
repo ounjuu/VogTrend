@@ -48,7 +48,7 @@ h4 {
 .headerTitle h4 img {
   padding-top: 25px;
   width: 350px;
-  height: 130px;
+  height: 120px;
 }
 
 .headercontent {
@@ -138,6 +138,7 @@ a:visited {
   .subBtn {
     display: none;
   }
+
   .headercontent {
     flex-direction: column;
     display: flex;
@@ -213,10 +214,8 @@ a:visited {
     transition: transform 0.3s ease;
   }
   .headerTitle h4 img {
-    padding-top: 30px;
     width: 250px;
-    height: 80px;
-    padding-bottom: 25px;
+    height: 100px;
   }
   .rightBox {
     right: 25px;
@@ -226,7 +225,7 @@ a:visited {
   }
 }
 @media (max-width: 480px) {
-  header {
+  header.header {
     padding: 0px !important;
     height: 180px !important;
   }

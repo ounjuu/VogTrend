@@ -5,6 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
+        {/* <button className="btn_top">
+          <img src="/img/ic_top.svg" alt="top icon" />
+          TOP
+        </button> */}
         <div className="footerTitle">
           <h4>
             <img src="/img/vogTrend2.png" />
