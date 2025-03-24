@@ -1,4 +1,4 @@
-# 👒 VOGTREND React Website
+# 👒 VOG TREND React Website
 
 ## 🚀 프로젝트 소개
 ✔ 👗**VOG TREND**는 **React**를 사용하여 만든 프로젝트로, 보그(VOGUE) 홈페이지를 모티브로 하여 제작하였습니다. </br>
