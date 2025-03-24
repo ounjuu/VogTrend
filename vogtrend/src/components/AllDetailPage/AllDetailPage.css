@@ -21,12 +21,12 @@ body {
 .my_footer {
   margin-top: auto;
 }
-
-.AllDetailPageContent {
-  .TitleText {
-    padding-top: 20px;
-    h2 {
-      font-size: 25px;
+@media (max-width: 768px) {
+  .AllDetailPageContent {
+    .TitleText {
+      h2 {
+        font-size: 25px;
+      }
     }
   }
 }
