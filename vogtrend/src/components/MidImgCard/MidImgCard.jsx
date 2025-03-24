@@ -4,6 +4,7 @@ import "./MidImgCard.css";
 // 메인페이지 제목들
 const MidImgCard = (props) => {
   const { midData } = props;
+  console.log(midData, "midDAta");
   return (
     <div className="MidImgCardContainer">
       <div className="MidImgCard">
@@ -13,7 +14,7 @@ const MidImgCard = (props) => {
         <div className="MidCardTextBox">
           <div className="MidCardTextBottom">
             <p>
-              {midData.fashionTitle} <span className="fontSize10">|</span>{" "}
+              {midData.fashionTitle} <span className="fontSize10">|</span>
               <span>{midData.date}</span>
             </p>
             <h2>{midData.subTitle}</h2>

@@ -18,6 +18,37 @@ body {
   min-height: 500px;
 }
 
+.DetailPageContent {
+  padding: 10px 45px 20px 45px;
+}
+
 .my_footer {
   margin-top: auto;
+}
+
+.DetailAllWrap {
+  display: flex;
+}
+.DetailNotSticky {
+  width: 70%;
+}
+.DetailPageSticky {
+  width: 30%;
+  position: relative;
+  overflow: visible;
+}
+
+.DetailPageSticky img {
+  position: sticky;
+  top: 0px;
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.MidCardsWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }

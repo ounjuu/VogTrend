@@ -4,7 +4,7 @@ import TitleText from "../TitleText/TitleText";
 import SmallCard from "../SmallCard/SmallCard";
 
 const LatestStories = (props) => {
-  const { handleMoreClick } = props;
+  const { handleMoreClick, Data } = props;
   // 작은 카드 데이터
   const fashionData = [
     {
@@ -134,7 +134,7 @@ const LatestStories = (props) => {
         <div className="LatestStoriesCardBox">
           {/* 작은 사이즈 cards */}
           <div className="LatestStoriesLeft">
-            {smallCardData.map((card, index) => (
+            {(Data ? Data : smallCardData).map((card, index) => (
               <SmallCard key={index} smallCardData={card} isSquare={true} />
             ))}
           </div>
