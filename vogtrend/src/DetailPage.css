@@ -37,6 +37,7 @@ body {
   width: 30%;
   position: relative;
   overflow: visible;
+  cursor: pointer;
 }
 
 .DetailPageSticky img {

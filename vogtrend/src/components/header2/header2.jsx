@@ -4,6 +4,7 @@ import "./header2.css";
 function Header2(props) {
   const { setDetailPage, setMidDetailPage, setUnderlinedIndex } = props;
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedValue, setSelectedValue] = useState("KOREA");
   const toggleSelectBox = () => {
     setIsOpen(!isOpen);
   };
@@ -113,18 +114,30 @@ function Header2(props) {
                 className="selectOptions"
                 onClick={toggleSelectBox}
                 onBlur={() => setIsOpen(false)}
+                value={selectedValue}
+                onChange={() => {
+                  alert("준비중입니다.");
+                  setSelectedValue("KOREA");
+                }}
               >
-                <option>KOREA</option>
-                <option>USA</option>
-                <option>FRANCE</option>
-                <option>JAPAN</option>
-                <option>CHINA</option>
-                <option>GERMANY</option>
-                <option>SPAIN</option>
+                <option value="KOREA">KOREA</option>
+                <option value="USA">USA</option>
+                <option value="FRANCE">FRANCE</option>
+                <option value="JAPAN">JAPAN</option>
+                <option value="CHINA">CHINA</option>
+                <option value="GERMANY">GERMANY</option>
+                <option value="SPAIN">SPAIN</option>
               </select>
             </div>
-            <div className="subBtn">구독하기</div>
-            <div className="hamburgerBtn">☰</div>
+            <div className="subBtn" onClick={() => alert("준비중입니다.")}>
+              구독하기
+            </div>
+            <div
+              className="hamburgerBtn"
+              onClick={() => alert("준비중입니다.")}
+            >
+              ☰
+            </div>
           </div>
         </nav>
       </div>

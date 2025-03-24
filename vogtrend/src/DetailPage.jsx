@@ -1455,7 +1455,10 @@ function DetailPage(props) {
                 )}
               </div>
             </div>
-            <div className="DetailPageSticky">
+            <div
+              className="DetailPageSticky"
+              onClick={() => alert("준비중입니다.")}
+            >
               {/* 스티키 card */}
               <img src="/img/sticky.jpeg" alt="youtube" />
             </div>

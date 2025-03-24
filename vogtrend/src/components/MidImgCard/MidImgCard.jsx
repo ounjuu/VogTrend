@@ -6,7 +6,7 @@ const MidImgCard = (props) => {
   const { midData } = props;
   return (
     <div className="MidImgCardContainer">
-      <div className="MidImgCard">
+      <div className="MidImgCard" onClick={() => alert("준비중입니다.")}>
         <div className="MidImgCardBox">
           <img src={midData.img} alt={`${midData.fashionTitle} Img`} />
         </div>

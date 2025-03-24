@@ -6,7 +6,7 @@ const TitleText = (props) => {
   const { text, showMore, handleMoreClick } = props;
   return (
     <div className="TitleTextContainer">
-      <div className="TitleText">
+      <div className="TitleText" onClick={() => alert("준비중입니다.")}>
         <h2>{text}</h2>
         {showMore && (
           <button onClick={handleMoreClick} className="MoreButton">

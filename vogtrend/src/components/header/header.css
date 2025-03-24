@@ -49,6 +49,7 @@ h4 {
   padding-top: 25px;
   width: 350px;
   height: 120px;
+  cursor: pointer;
 }
 
 .headercontent {

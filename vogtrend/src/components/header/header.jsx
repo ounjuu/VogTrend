@@ -7,7 +7,7 @@ function Header(props) {
   const toggleSelectBox = () => {
     setIsOpen(!isOpen);
   };
-
+  const [selectedValue, setSelectedValue] = useState("KOREA");
   const [isVisible, setIsVisible] = useState(true);
   let lastScrollTop = 0;
 
@@ -76,6 +76,11 @@ function Header(props) {
                 className="selectOptions"
                 onClick={toggleSelectBox}
                 onBlur={() => setIsOpen(false)}
+                value={selectedValue}
+                onChange={() => {
+                  alert("준비중입니다.");
+                  setSelectedValue("KOREA");
+                }}
               >
                 <option>KOREA</option>
                 <option>USA</option>
@@ -86,8 +91,15 @@ function Header(props) {
                 <option>SPAIN</option>
               </select>
             </div>
-            <div className="subBtn">구독하기</div>
-            <div className="hamburgerBtn">☰</div>
+            <div className="subBtn" onClick={() => alert("준비중입니다.")}>
+              구독하기
+            </div>
+            <div
+              className="hamburgerBtn"
+              onClick={() => alert("준비중입니다.")}
+            >
+              ☰
+            </div>
           </div>
         </nav>
       </div>

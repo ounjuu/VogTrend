@@ -7,7 +7,7 @@ const SmallCard = (props) => {
 
   return (
     <div className="SmallCardContainer">
-      <div className="SmallCard">
+      <div className="SmallCard" onClick={() => alert("준비중입니다.")}>
         <div
           className={`SmallCardBox ${swiperClass ? "small" : ""} ${
             isSquare ? "square" : ""

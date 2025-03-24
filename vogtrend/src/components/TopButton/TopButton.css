@@ -1,0 +1,30 @@
+.TopButton button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  background-color: inherit;
+  bottom: 15px;
+  right: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.TopButton button img {
+  width: 8px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.TopButton.hidden {
+  opacity: 0;
+}
+
+.TopButton.visible {
+  opacity: 1;
+}
