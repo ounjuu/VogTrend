@@ -9,10 +9,24 @@
 * 유지보수 용이: 각 컴포넌트가 독립적으로 동작하게 하여 코드 변경이나 디버깅 시 수정이 필요한 부분만 빠르게 수정할 수 있도록 하였습니다.
 * 가독성 향상: 복잡한 로직이나 스타일을 각 컴포넌트로 분리함으로써, 코드의 가독성과 이해도를 높였습니다.
 
-## 🎥 서비스 미리보기
-아래는 **VOG TREND**의 주요 화면을 미리 볼 수 있는 GIF 이미지입니다.  
-각 페이지의 UI 및 기능을 확인해보세요! 
+## ✔ **메인 페이지**
+<div align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/86beaa59-b3ac-42cd-be03-40cfa130db50" /><br/>
+</div>
+<br/>
 
+## ✔ **상세 페이지**
+<div align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8285fc34-61c3-4a48-8b1c-6cefea5bec82" /><br/>
+</div>
+
+## ✔ **반응형**
+<div align="center">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/396449f2-2f29-4699-a5e7-de94903d562e" /><br/>
+</div>
+
+## 🎥 서비스 모아보기
+* 아래는 **VOG TREND**의 GIF 이미지입니다. 각 페이지의 UI 및 기능을 확인해보세요.
 
 <table width="100%">
   <tr>
@@ -21,31 +35,24 @@
       <br>
       <img src="https://github.com/user-attachments/assets/1429f647-a27a-4ecc-b486-7424043c87c2" width="100%" height="250px">
     </td>
+        <td align="center" width="50%">
+      📱 메인 페이지 - 반응형 디자인 (Responsive Design)   
+      <br>
+      <img src="https://github.com/user-attachments/assets/c8786d07-b7cc-48cb-acd0-39351ebbdc17" width="60%" height="250px">
+    </td>
+
+  </tr>
+  <tr>
     <td align="center" width="50%">
       🔍 상세 페이지 (Login)  
       <br>
       <img src="https://github.com/user-attachments/assets/c70e0d2f-304f-4204-a3e4-909b6339603f" width="100%" height="250px">
     </td>
-  </tr>
-  <tr>
     <td align="center" width="50%">
-      🔍 검색 페이지 (Search) 
+      📱 상세 페이지 - 반응형 디자인 (Responsive Design)  
       <br>
-      <img src="https://github.com/user-attachments/assets/905c25cf-9043-43d2-8f6c-bd160f6d50f9" width="100%" height="250px">
+      <img src="https://github.com/user-attachments/assets/273d6ce4-7bb8-4f5d-ba54-3e39274e9732" width="60%" height="250px">
     </td>
-    <td align="center" width="50%">
-      📱 반응형 디자인 (Responsive Design)  
-      <br>
-      <img src="https://github.com/user-attachments/assets/a3cb8e67-b70a-4b51-926c-cde1ef62a558" width="100%" height="250px">
-    </td>
+
   </tr>
 </table>
-
-
-✔ **메인 페이지**
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/86beaa59-b3ac-42cd-be03-40cfa130db50" />
-
-✔ **상세 페이지**
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/8285fc34-61c3-4a48-8b1c-6cefea5bec82" />
