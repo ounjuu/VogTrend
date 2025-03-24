@@ -24,7 +24,7 @@
     <td align="center" width="50%">
       🔍 상세 페이지 (Login)  
       <br>
-      <img src="https://github.com/user-attachments/assets/040139d5-ca9a-4e50-904c-b31afed7aad1" width="100%" height="250px">
+      <img src="https://github.com/user-attachments/assets/c70e0d2f-304f-4204-a3e4-909b6339603f" width="100%" height="250px">
     </td>
   </tr>
   <tr>
@@ -44,8 +44,8 @@
 
 ✔ **메인 페이지**
 
-![vodtrend](https://github.com/user-attachments/assets/86beaa59-b3ac-42cd-be03-40cfa130db50)
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/86beaa59-b3ac-42cd-be03-40cfa130db50" />
 
 ✔ **상세 페이지**
 
-<img width="861" alt="image" src="https://github.com/user-attachments/assets/8285fc34-61c3-4a48-8b1c-6cefea5bec82" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8285fc34-61c3-4a48-8b1c-6cefea5bec82" />
