@@ -9,6 +9,18 @@
 * **유지보수 용이**: 각 컴포넌트가 독립적으로 동작하게 하여 코드 변경이나 디버깅 시 수정이 필요한 부분만 빠르게 수정할 수 있도록 하였습니다.
 * **가독성 향상**: 복잡한 로직이나 스타일을 각 컴포넌트로 분리함으로써, 코드의 가독성과 이해도를 높였습니다.
 
+
+## :high_brightness: 개발환경
+<div align="center">
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+</div>
+<br/>
+
+
 ## ✔ **메인 페이지**
 <div align="center">
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/86beaa59-b3ac-42cd-be03-40cfa130db50" /><br/>
