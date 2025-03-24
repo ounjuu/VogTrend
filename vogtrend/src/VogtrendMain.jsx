@@ -8,8 +8,8 @@ function VogtrendMain() {
   return (
     <>
       {detailPage === "MainPage" && <MainPage setDetailPage={setDetailPage} />}
-      {detailPage === "DetailPage" && (
-        <DetailPage setDetailPage={setDetailPage} />
+      {detailPage !== "MainPage" && (
+        <DetailPage setDetailPage={setDetailPage} detailPage={detailPage} />
       )}
     </>
   );

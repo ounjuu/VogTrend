@@ -45,27 +45,27 @@ function Header(props) {
           </div>
           <ul className="header-nav">
             <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
+              <a href="#" onClick={() => setDetailPage("FASHION")}>
                 FASHION
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
+              <a href="#" onClick={() => setDetailPage("BEAUTY")}>
                 BEAUTY
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
+              <a href="#" onClick={() => setDetailPage("LIFESTYLE")}>
                 LIFESTYLE
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
+              <a href="#" onClick={() => setDetailPage("CULTURE")}>
                 CULTURE
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setDetailPage("DetailPage")}>
+              <a href="#" onClick={() => setDetailPage("VIDEO")}>
                 VIDEO
               </a>
             </li>
