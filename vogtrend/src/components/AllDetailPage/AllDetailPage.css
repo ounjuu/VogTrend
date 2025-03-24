@@ -15,10 +15,18 @@ body {
 
 .content {
   flex: 1;
-  /* padding-top: 220px; */
   min-height: 500px;
 }
 
 .my_footer {
   margin-top: auto;
+}
+
+.AllDetailPageContent {
+  .TitleText {
+    padding-top: 20px;
+    h2 {
+      font-size: 25px;
+    }
+  }
 }

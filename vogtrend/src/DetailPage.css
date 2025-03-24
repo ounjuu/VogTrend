@@ -28,9 +28,10 @@ body {
 
 .DetailAllWrap {
   display: flex;
+  justify-content: space-between;
 }
 .DetailNotSticky {
-  width: 70%;
+  width: 68%;
 }
 .DetailPageSticky {
   width: 30%;
@@ -39,6 +40,7 @@ body {
 }
 
 .DetailPageSticky img {
+  width: 100%;
   position: sticky;
   top: 0px;
   display: block;
@@ -51,4 +53,31 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  .DetailPageSticky {
+    display: none;
+  }
+  .DetailNotSticky {
+    width: 100%;
+    .MidCardsWrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .DetailNotSticky {
+    width: 100%;
+    .DetailMidImgLeft {
+      width: 100%;
+    }
+    .DetailRight {
+      padding-top: 20px;
+    }
+  }
+  .DetailPageContent {
+    padding: 10px 15px 20px 15px;
+  }
 }

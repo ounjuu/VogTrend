@@ -702,6 +702,26 @@ const DetailLeft = (props) => {
             })()}
         </div>
         {/* LATEST STORIES */}
+        <TitleText text="LATEST STORIES" />
+        {/* LATEST STORIES 작은 사이즈 cards */}
+        <div className="fashionItemBox">
+          {(() => {
+            const allData = {
+              FASHION: fashionAllData,
+              BEAUTY: beautyData,
+              LIFESTYLE: lifestyleData,
+              CULTURE: cultureData,
+              VIDEO: videoData,
+            };
+
+            const filteredData = allData[detailPage] || [];
+            return filteredData
+              .slice(0, 9)
+              .map((card, index) => (
+                <SmallCard key={index} smallCardData={card} isSquare={true} />
+              ));
+          })()}
+        </div>
       </div>
     </div>
   );

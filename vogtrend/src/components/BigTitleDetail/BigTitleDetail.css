@@ -9,6 +9,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 .BigTitleText {
   text-align: center;
@@ -37,5 +38,55 @@ h2 {
   cursor: pointer;
   box-sizing: border-box;
   line-height: 1.5;
-  font-size: 13px;
+  font-size: 15px;
+}
+/* 반응형 스타일 */
+
+@media (max-width: 1024px) {
+  .BigTitleDetailContainer {
+    padding-top: 70px;
+  }
+  .midTitleText {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .BigTitleText {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .midTitleText {
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .midText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .BigTitleDetailContainer {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .BigTitleText {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .midText {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .midTitleText {
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+  .BigTitleDetailContainer {
+    padding-top: 20px;
+  }
 }

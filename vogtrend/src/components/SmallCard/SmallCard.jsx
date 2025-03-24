@@ -4,7 +4,7 @@ import "./SmallCard.css";
 // 메인페이지 제목들
 const SmallCard = (props) => {
   const { isSquare, smallCardData, swiperClass } = props;
-  console.log(isSquare, "isSquare");
+
   return (
     <div className="SmallCardContainer">
       <div className="SmallCard">

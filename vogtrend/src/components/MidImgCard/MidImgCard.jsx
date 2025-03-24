@@ -4,7 +4,6 @@ import "./MidImgCard.css";
 // 메인페이지 제목들
 const MidImgCard = (props) => {
   const { midData } = props;
-  console.log(midData, "midDAta");
   return (
     <div className="MidImgCardContainer">
       <div className="MidImgCard">
