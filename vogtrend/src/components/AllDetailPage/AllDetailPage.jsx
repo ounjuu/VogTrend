@@ -22,6 +22,8 @@ function AllDetailPage(props) {
           detailPage={detailPage}
           fashionAllData={fashionAllData}
           midDataObject={midDataObject}
+          isSquare={false}
+          handleMoreClick={handleMoreClick}
         />
       </div>
     </div>
