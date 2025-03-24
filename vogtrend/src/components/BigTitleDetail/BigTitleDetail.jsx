@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // DetailPage 제목들
 const BigTitleDetail = (props) => {
   const { BigTitle, texts, midDetailPage, setMidDetailPage } = props;
-  const [underlinedIndex, setUnderlinedIndex] = useState(null);
+  const { underlinedIndex, setUnderlinedIndex } = props;
   const handleClick = (title, index) => {
     setMidDetailPage(title);
     setUnderlinedIndex(index);

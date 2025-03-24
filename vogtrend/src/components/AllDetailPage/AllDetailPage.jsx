@@ -8,7 +8,16 @@ import LatestStories from "../LatestStories/LatestStories";
 import DetailLeft from "../DetailLeft/DetailLeft";
 
 function AllDetailPage(props) {
-  const { detailPage, setDetailPage, fashionAllData, midDataObject } = props;
+  const {
+    detailPage,
+    setDetailPage,
+    fashionAllData,
+    midDataObject,
+    beautyAllData,
+    lifestyleAllData,
+    cultureAllData,
+    videoAllData,
+  } = props;
   // alert 띄우기
   const handleMoreClick = () => {
     alert("준비중입니다.");
@@ -21,6 +30,10 @@ function AllDetailPage(props) {
         <DetailLeft
           detailPage={detailPage}
           fashionAllData={fashionAllData}
+          beautyAllData={beautyAllData}
+          lifestyleAllData={lifestyleAllData}
+          cultureAllData={cultureAllData}
+          videoAllData={videoAllData}
           midDataObject={midDataObject}
           isSquare={false}
           handleMoreClick={handleMoreClick}

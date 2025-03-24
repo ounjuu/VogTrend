@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header2.css";
 
 function Header2(props) {
-  const { setDetailPage } = props;
+  const { setDetailPage, setMidDetailPage, setUnderlinedIndex } = props;
   const [isOpen, setIsOpen] = useState(false);
   const toggleSelectBox = () => {
     setIsOpen(!isOpen);
@@ -46,27 +46,62 @@ function Header2(props) {
             </div>
             <ul className="header2-nav">
               <li>
-                <a href="#" onClick={() => setDetailPage("FASHION")}>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setDetailPage("FASHION");
+                    setMidDetailPage("전체");
+                    setUnderlinedIndex(0);
+                  }}
+                >
                   FASHION
                 </a>
               </li>
               <li>
-                <a href="#" onClick={() => setDetailPage("BEAUTY")}>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setDetailPage("BEAUTY");
+                    setMidDetailPage("전체");
+                    setUnderlinedIndex(0);
+                  }}
+                >
                   BEAUTY
                 </a>
               </li>
               <li>
-                <a href="#" onClick={() => setDetailPage("LIFESTYLE")}>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setDetailPage("LIFESTYLE");
+                    setMidDetailPage("전체");
+                    setUnderlinedIndex(0);
+                  }}
+                >
                   LIFESTYLE
                 </a>
               </li>
               <li>
-                <a href="#" onClick={() => setDetailPage("CULTURE")}>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setDetailPage("CULTURE");
+                    setMidDetailPage("전체");
+                    setUnderlinedIndex(0);
+                  }}
+                >
                   CULTURE
                 </a>
               </li>
               <li>
-                <a href="#" onClick={() => setDetailPage("VIDEO")}>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setDetailPage("VIDEO");
+                    setMidDetailPage("전체");
+                    setUnderlinedIndex(0);
+                  }}
+                >
                   VIDEO
                 </a>
               </li>
